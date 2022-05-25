@@ -1,0 +1,46 @@
+---
+title: "GSIRT Academic Perspective"
+subtitle: "Opportunities and Impact"
+author: "Barry Quinn PhD CStat"
+format:
+  revealjs: 
+    slide-number: true
+    scrollable: true
+    smaller: true
+    preview-links: auto
+    logo: qmslogo.png
+    footer: <https://quinference.com>
+    theme: moon
+editor: visual
+---
+
+## Introduction
+
+-   The main challenges for both RegTech providers and their financial services customers are internal make collaborative and [co-production](https://www.ukri.org/about-us/policies-standards-and-data/good-research-resource-hub/research-co-production/) research difficult.
+-   These challenges point to research:
+    -   gaps in data quality, security and privacy,
+
+    -   interoperability and integration with existing legacy systems,
+
+    -   lack of Financial Institutions API capabilities quality, security and privacy.
+
+## Industry Challenges in Regulatory Technology {.smaller}
+
+-   Internal challenges highlighted
+
+|                         Financial Institutions Adopter                         | RegTech Providers                                             |
+|:-------------------------------:|:--------------------------------------|
+|         <mark>Data‐related challenges and cybersecurity threats</mark>         | <mark>Lack of technological capabilities on FIs' side </mark> |
+| <mark>Interoperability and integration with the existing legacy systems</mark> | <mark>Security, data privacy and protection issues</mark>     |
+|                             Changes to regulation                              | Changes of national and international regulation              |
+|                   <mark>Costs and procurement process</mark>                   | <mark>Cost of user acquisition</mark>                         |
+|               <mark>Lack of necessary skills and training</mark>               | <mark>Lack of FIs' understanding of RegTech solutions</mark>  |
+|       <mark>Perceived immaturity of RegTech providers' solutions</mark>        | Lack of harmonised legal and regulatory requirements          |
+|                                                                                | Clarity of regulatory or supervisory guidance                 |
+|                                                                                | <mark>Competition with other solutions</mark>                 |
+
+*Sourced from EBA (2021)*
+
+## Our Research Expertise
+
+![](mermaid-diagram-20220525104423.png){fig-align="center" width="1000"}
