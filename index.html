@@ -4,7 +4,7 @@
   <meta name="generator" content="quarto-0.9.449">
 
   <meta name="author" content="Barry Quinn PhD CStat">
-  <title>GSIRT Academic Perspective</title>
+  <title>GSIRT</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -25,7 +25,7 @@
   <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
   <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
   <link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
-  <link id="quarto-text-highlighting-styles" href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet">
+  <link id="quarto-text-highlighting-styles" href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -321,22 +321,36 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">GSIRT Academic Perspective</h1>
+  <h1 class="title">GSIRT</h1>
   <p class="subtitle">Opportunities and Impact</p>
   <p class="author">Barry Quinn PhD CStat</p>
 </section>
 
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section id="background-and-need" class="slide level2">
+<h2>Background and need</h2>
 <ul>
-<li>The main challenges for both RegTech providers and their financial services customers are internal make collaborative and <a href="https://www.ukri.org/about-us/policies-standards-and-data/good-research-resource-hub/research-co-production/">co-production</a> research difficult.</li>
-<li>These challenges point to research:
-<ul>
-<li><p>gaps in data quality, security and privacy,</p></li>
-<li><p>interoperability and integration with existing legacy systems,</p></li>
-<li><p>lack of Financial Institutions API capabilities quality, security and privacy.</p></li>
-</ul></li>
+<li><p>Outsourcing in financial services has only accelerated in the pandemic era</p></li>
+<li><p>The largest drivers of digital transformation in financial services outsourcing are:</p></li>
 </ul>
+<ol type="1">
+<li>Resilience focused regulations regulators in 🇬🇧, 🇺🇸 and 🇪🇺</li>
+<li>Cloud migration for business agility and ESG benefits;</li>
+<li>Cyber security, risk and privacy;</li>
+<li>AI and machine learning adoption;</li>
+</ol>
+<div class="callout callout-important callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>IDC statistic</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Worldwide, International Data Corporation predicts that the financial services industry will be second only to retail when it comes to spending on AI between 2021 and 2025, accounting for nearly 14% of the $204 billion that will be spent annually by the end of that period.</strong></p>
+</div>
+</div>
+</div>
 </section>
 <section id="industry-challenges-in-regulatory-technology" class="slide level2 smaller">
 <h2>Industry Challenges in Regulatory Technology</h2>
@@ -345,8 +359,8 @@
 </ul>
 <table>
 <colgroup>
-<col style="width: 45%">
-<col style="width: 54%">
+<col style="width: 50%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -395,7 +409,8 @@
 <h2>Our Research Expertise</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="mermaid-diagram-20220525104423.png" width="1000"></p>
+<p><img data-src="gsirt.jpeg"></p>
+<p></p><figcaption aria-hidden="true">Diagram of existing multidisciplinary and impactful research</figcaption><p></p>
 </figure>
 </div>
 <p><img src="qmslogo.png" class="slide-logo"></p>
@@ -614,6 +629,48 @@
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          // dispatch for htmlwidgets
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for reveal
+        if (window.Reveal) {
+          window.Reveal.addEventListener("slidechanged", function(event) {
+            fireSlideChanged(event.previousSlide, event.currentSlide);
+          });
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

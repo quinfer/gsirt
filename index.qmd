@@ -1,5 +1,5 @@
 ---
-title: "GSIRT Academic Perspective"
+title: "GSIRT"
 subtitle: "Opportunities and Impact"
 author: "Barry Quinn PhD CStat"
 format:
@@ -10,26 +10,33 @@ format:
     preview-links: auto
     logo: qmslogo.png
     footer: <https://quinference.com>
-    theme: moon
+    theme: simple
 editor: visual
 ---
 
-## Introduction
+## Background and need
 
--   The main challenges for both RegTech providers and their financial services customers are internal make collaborative and [co-production](https://www.ukri.org/about-us/policies-standards-and-data/good-research-resource-hub/research-co-production/) research difficult.
--   These challenges point to research:
-    -   gaps in data quality, security and privacy,
+-   Outsourcing in financial services has only accelerated in the pandemic era
 
-    -   interoperability and integration with existing legacy systems,
+-   The largest drivers of digital transformation in financial services outsourcing are:
 
-    -   lack of Financial Institutions API capabilities quality, security and privacy.
+1.  Resilience focused regulations regulators in `r emo::flag("United Kingdom")`, `r emo::flag("United States")` and `r emo::flag("European Union");`
+2.  Cloud migration for business agility and ESG benefits;
+3.  Cyber security, risk and privacy;
+4.  AI and machine learning adoption;
+
+::: callout-important
+## IDC statistic
+
+**Worldwide, International Data Corporation predicts that the financial services industry will be second only to retail when it comes to spending on AI between 2021 and 2025, accounting for nearly 14% of the \$204 billion that will be spent annually by the end of that period.**
+:::
 
 ## Industry Challenges in Regulatory Technology {.smaller}
 
 -   Internal challenges highlighted
 
 |                         Financial Institutions Adopter                         | RegTech Providers                                             |
-|:-------------------------------:|:--------------------------------------|
+|:----------------------------------:|:-----------------------------------|
 |         <mark>Data‐related challenges and cybersecurity threats</mark>         | <mark>Lack of technological capabilities on FIs' side </mark> |
 | <mark>Interoperability and integration with the existing legacy systems</mark> | <mark>Security, data privacy and protection issues</mark>     |
 |                             Changes to regulation                              | Changes of national and international regulation              |
@@ -43,4 +50,4 @@ editor: visual
 
 ## Our Research Expertise
 
-![](mermaid-diagram-20220525104423.png){fig-align="center" width="1000"}
+![Diagram of existing multidisciplinary and impactful research](gsirt.jpeg){fig-align="center"}
