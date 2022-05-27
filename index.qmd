@@ -50,4 +50,4 @@ editor: visual
 
 ## Our Research Expertise
 
-![Diagram of existing multidisciplinary and impactful research](gsirt.jpeg){fig-align="center"}
+![Diagram of existing multidisciplinary and impactful research](gsirt.png){fig-align="center"}
